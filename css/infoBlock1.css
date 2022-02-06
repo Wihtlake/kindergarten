@@ -1,0 +1,242 @@
+html{
+    scroll-behavior: smooth;
+  }
+  *{
+      margin: 0 auto;
+      font-weight:lighter;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  body{
+      background: url(img/bc2.png);
+      animation: blur .6s;
+  }
+  @keyframes blur{
+      0%{filter: opacity(0) blur(5px);}
+      100%{filter: opacity(1) blur(0px);}
+  }
+  
+  /* <!-- шапка --> */
+  
+  .container{
+      background: #4986E7;
+  }
+  .firstPage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 75%;  
+      margin: auto;
+  }
+  
+  .img img{
+      
+      margin: 10px 20px;
+      width: 70%;
+      filter: brightness(2);
+      transition: filter 0.4s;
+  }
+  .img img:hover{
+      filter: brightness(4);
+  }
+  
+  .menu{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      justify-content: center;
+  }
+  .tag{
+      
+     margin: 0 10px;
+      padding: 10px 20px;
+      font: 1em sans-serif;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      
+      transition: background .6s .01s , color .5s, border-radius .5s;
+  
+  }
+  .tag:hover{
+      padding: 10px 20px;
+      border-radius: 50px;
+      background: white;
+      color: black;
+    
+  }
+
+.h1{
+  margin: 20px auto;
+  border-radius: 20px;
+  
+  text-align: center;
+  background: rgba(41, 144, 192, 0.290);
+  border-bottom: 1.2px solid rgba(160, 160, 160, 0.424);
+  padding: 30px;
+  color: rgba(0, 0, 0, 0.52);
+  font-weight: 550;
+}
+
+
+
+
+.conatiner2{ /* основной контейнер для блоков */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    
+}
+
+
+.box2{ /* сам блок с информацией*/
+    min-width: 280px;
+    margin: 25px 25px;
+    background: rgba(247, 234, 255, 0.925);
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 21%;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.imgBox2 img { /* блок с изображением */
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    transition: transform .5s, filter .5s;
+}
+.imgBox2{
+    overflow: hidden;
+
+    
+}
+.box2:hover .imgBox2 img{
+    transform: scale(1.06);
+    filter: brightness(1.2);
+}
+.box2:hover{
+    transform: scale(1.03);
+}
+
+
+.dateBox {
+    padding-bottom: 10px;
+    padding-left: 3px;
+    text-align: left;
+    font-size: 1.3vh;
+    color: rgba(88, 88, 88, 0.397);
+    font-weight: 500;
+ 
+}
+.textBox2 a{
+    font-size: 1.8vh;
+    font-weight: 600;
+    text-decoration: none;
+    
+    transition: text-decoration 1s ;
+}
+.textBox2 a:hover{
+    text-decoration: underline;
+}
+
+.textBox2 p{
+    font-size: 1.5vh;
+    margin: 10px 0;
+}
+.textBox2{ /* текст блока*/
+    padding: 3px 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: black;
+}
+.imgFoot{
+    
+    width: 80%;
+    border: 1px solid;
+    flex-direction: row;
+
+}
+.foot img{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin-left: -40px;
+}
+
+.imgFoot{
+    box-sizing: border-box;
+}
+.foot{
+    width: 15%;
+    padding: 5px 0;
+}
+.Pfoot{
+    align-items: flex-end;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.603);
+}
+.Pfoot a{
+    color: violet;
+    text-decoration: none;
+}
+.Pfoot p{
+    margin: 10px 0;
+
+}
